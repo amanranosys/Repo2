@@ -11,7 +11,10 @@ class Employee
   
   public void show()
   {
-    System.out.println("name is"+ name + "age is"+ age + "salary is"+ salary );
+    //System.out.println("name is"+ name + "age is"+ age + "salary is"+ salary );
+    System.out.println("name is   "+ name );
+    System.out.println("age is  "+ age );
+    System.out.println("salary is  "+ salary);
   }
   
   public Employee()
@@ -25,14 +28,15 @@ class Employee
       this.age= age;
       this.salary= salary;
   }
+}
   
   public class Main
   {
-    public Static void main(String [] Args)
+    public static void main(String [] Args)
     {
       Employee E1 = new Employee();
-      E1.Employee("Ram", 25, 50000);
-      E1.show();
+      Employee E2= new Employee("Ram", 25, 50000);
+      E2.show();
     }
     
     
